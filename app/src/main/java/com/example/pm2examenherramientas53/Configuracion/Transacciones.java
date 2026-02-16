@@ -2,6 +2,41 @@ package com.example.pm2examenherramientas53.Configuracion;
 
 public class Transacciones
 {
+
+    /*
+        Tabla de herramientas
+CREATE TABLE IF NOT EXISTS Herramientas (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nombre TEXT NOT NULL,
+descripcion TEXT NOT NULL,
+especificaciones TEXT NOT NULL,
+foto_uri TEXT,
+estado TEXT NOT NULL DEFAULT 'DISPONIBLE' -- DISPONIBLE | ASIGNADA
+);
+
+Tabla de técnicos
+CREATE TABLE IF NOT EXISTS Tecnicos (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nombre TEXT NOT NULL,
+telefono TEXT,
+especialidad TEXT
+);
+
+Tabla de asignaciones
+CREATE TABLE IF NOT EXISTS Asignaciones (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+herramienta_id INTEGER NOT NULL,
+tecnico_id INTEGER NOT NULL,
+fecha_inicio TEXT NOT NULL, -- ISO 8601
+fecha_fin TEXT NOT NULL, -- fecha de entrega programada
+fecha_devolucion TEXT, -- null si aún no fue entregada
+notas_entrega TEXT,
+foto_entrega_uri TEXT, -- foto al entregar
+foto_devolucion_uri TEXT, -- foto al devolver
+FOREIGN KEY(herramienta_id) REFERENCES Herramientas(id),
+FOREIGN KEY(tecnico_id) REFERENCES Tecnicos(id)
+);
+    */
     //DB name
     public static final String dbname = "DBPM01";
 

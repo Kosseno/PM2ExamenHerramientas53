@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AltaHerramientas">
+
+    <EditText
+        android:id="@+id/txtdescripcionaltaherramientas"
+        android:layout_width="327dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombrealtaherramientas" />
+
+    <EditText
+        android:id="@+id/txtespecificaciontecnica"
+        android:layout_width="329dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Espe. Tecnicas"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescripcionaltaherramientas" />
+
+    <ImageView
+        android:id="@+id/imagefotoalta"
+        android:layout_width="225dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/txtnombrealtaherramientas"
+        android:layout_width="327dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagefotoalta" />
+
+    <Button
+        android:id="@+id/btnfoto"
+        android:layout_width="119dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="92dp"
+        android:text="Subir foto"
+        app:layout_constraintBottom_toTopOf="@+id/txtnombrealtaherramientas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagefotoalta"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lbltitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Alta de Herramientas"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagefotoalta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Guardar"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtespecificaciontecnica" />
+
+    <Button
+        android:id="@+id/btntecnicos"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="Tecnicos"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toEndOf="@+id/btnguardar"
+        app:layout_constraintTop_toBottomOf="@+id/txtespecificaciontecnica" />
+
+    <Button
+        android:id="@+id/btnasignacion"
+        android:layout_width="162dp"
+        android:layout_height="54dp"
+        android:text="Asignacion"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtespecificaciontecnica"
+        app:layout_constraintVertical_bias="0.376" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

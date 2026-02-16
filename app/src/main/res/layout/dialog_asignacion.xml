@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione un Técnico"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_tecnicos_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Inicio"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/txt_fecha_inicio_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:focusable="false"
+        android:hint="yyyy-MM-dd"
+        android:inputType="none"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Entrega (Fin)"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/txt_fecha_fin_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:focusable="false"
+        android:hint="yyyy-MM-dd"
+        android:inputType="none" />
+
+</LinearLayout>
